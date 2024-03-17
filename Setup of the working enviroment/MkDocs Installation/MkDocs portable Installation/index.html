@@ -1,862 +1,120 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="http://www.heise.de/Setup%20of%20the%20working%20enviroment/MkDocs%20Installation/MkDocs%20portable%20Installation/" />
+      <link rel="shortcut icon" href="../../../img/favicon.ico" />
+    <title>MkDocs portable Installation - Build123d Noob help</title>
+    <link rel="stylesheet" href="../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "MkDocs portable Installation";
+        var mkdocs_page_input_path = "Setup of the working enviroment\\MkDocs Installation\\MkDocs portable Installation.md";
+        var mkdocs_page_url = "/Setup%20of%20the%20working%20enviroment/MkDocs%20Installation/MkDocs%20portable%20Installation/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
 
-<!doctype html>
-<html lang="en" class="no-js">
-  <head>
-    
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width,initial-scale=1">
-      
-      
-      
-      
-        <link rel="prev" href="../../Foreword%20working%20environment/">
-      
-      
-        <link rel="next" href="../../Visual%20Studio%20Code%20Setup/OCP%20Viewer%20setup/">
-      
-      
-      <link rel="icon" href="../../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.12">
-    
-    
-      
-        <title>MkDocs portable Installation - Build123d Noob help</title>
-      
-    
-    
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.7e359304.min.css">
-      
-      
+<body class="wy-body-for-nav" role="document">
 
-
-    
-    
-      
-    
-    
-      
-        
-        
-        
-        <link rel="stylesheet" href="../../../assets/external/fonts.googleapis.com/css.49ea35f2.css">
-        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
-      
-    
-    
-    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
-    
-      
-
-    
-    
-    
-  </head>
-  
-  
-    <body dir="ltr">
-  
-    
-    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
-    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
-    <label class="md-overlay" for="__drawer"></label>
-    <div data-md-component="skip">
-      
-        
-        <a href="#1-python-enviroment-for-mkdocs" class="md-skip">
-          Skip to content
-        </a>
-      
-    </div>
-    <div data-md-component="announce">
-      
-    </div>
-    
-    
-      
-
-  
-
-<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
-  <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../.." title="Build123d Noob help" class="md-header__button md-logo" aria-label="Build123d Noob help" data-md-component="logo">
-      
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
-
-    </a>
-    <label class="md-header__button md-icon" for="__drawer">
-      
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
-    </label>
-    <div class="md-header__title" data-md-component="header-title">
-      <div class="md-header__ellipsis">
-        <div class="md-header__topic">
-          <span class="md-ellipsis">
-            Build123d Noob help
-          </span>
-        </div>
-        <div class="md-header__topic" data-md-component="header-topic">
-          <span class="md-ellipsis">
-            
-              MkDocs portable Installation
-            
-          </span>
-        </div>
-      </div>
-    </div>
-    
-    
-      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
-    
-    
-    
-      <label class="md-header__button md-icon" for="__search">
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
-      </label>
-      <div class="md-search" data-md-component="search" role="dialog">
-  <label class="md-search__overlay" for="__search"></label>
-  <div class="md-search__inner" role="search">
-    <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
-      <label class="md-search__icon md-icon" for="__search">
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
-      </label>
-      <nav class="md-search__options" aria-label="Search">
-        
-          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
-            
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
-          </a>
-        
-        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
-          
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
-        </button>
-      </nav>
-      
-    </form>
-    <div class="md-search__output">
-      <div class="md-search__scrollwrap" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="search-result">
-          <div class="md-search-result__meta">
-            Initializing search
-          </div>
-          <ol class="md-search-result__list" role="presentation"></ol>
-        </div>
-      </div>
-    </div>
-  </div>
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../.." class="icon icon-home"> Build123d Noob help
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
 </div>
-    
-    
-  </nav>
-  
-    
-      
-<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
-  <div class="md-grid">
-    <ul class="md-tabs__list">
-      
-        
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../../../Index/" class="md-tabs__link">
-        
-  
-    
-  
-  Welcome to build123d noob help
+      </div>
 
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-  
-    
-    
-      
-  
-  
-  
-    
-    
-      <li class="md-tabs__item">
-        <a href="../../../Function%20description/1D%20Objects/1D%20Line/" class="md-tabs__link">
-          
-  
-  Function description
-
-        </a>
-      </li>
-    
-  
-
-    
-  
-
-      
-        
-  
-  
-    
-  
-  
-    
-    
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../../Foreword%20working%20environment/" class="md-tabs__link">
-          
-  
-  Setup of the working enviroment
-
-        </a>
-      </li>
-    
-  
-
-      
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../../Index/">Index</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../../Readme/">Readme</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Function description</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="#">1D Objects</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Function%20description/1D%20Objects/1D%20Line/">1D Line</a>
+                </li>
     </ul>
-  </div>
-</nav>
-    
-  
-</header>
-    
-    <div class="md-container" data-md-component="container">
-      
-      
-        
-      
-      <main class="md-main" data-md-component="main">
-        <div class="md-main__inner md-grid">
-          
-            
-              
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    
-
-
-  
-
-
-  
-
-<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
-  <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="Build123d Noob help" class="md-nav__button md-logo" aria-label="Build123d Noob help" data-md-component="logo">
-      
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
-
-    </a>
-    Build123d Noob help
-  </label>
-  
-  <ul class="md-nav__list" data-md-scrollfix>
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../Index/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Welcome to build123d noob help
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-    
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
-        
-          
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    Function description
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2">
-            <span class="md-nav__icon md-icon"></span>
-            Function description
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    
-    
-    
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
-        
-          
-          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    1D Objects
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_1">
-            <span class="md-nav__icon md-icon"></span>
-            1D Objects
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../Function%20description/1D%20Objects/1D%20Line/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    1D Line
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-    
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
-        
-          
-          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    2D Objects
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_2">
-            <span class="md-nav__icon md-icon"></span>
-            2D Objects
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../Function%20description/2D%20Objects/2D%20Rectangle/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    2D Rectangle
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-    
-  
-  
-  
-    
-    
-    
-      
-        
-        
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
-        
-          
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
-            
-  
-  <span class="md-ellipsis">
-    Setup of the working enviroment
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_3">
-            <span class="md-nav__icon md-icon"></span>
-            Setup of the working enviroment
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Foreword%20working%20environment/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Foreword working environment
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-    
-  
-  
-  
-    
-    
-    
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" checked>
-        
-          
-          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    MkDocs Installation
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_3_2">
-            <span class="md-nav__icon md-icon"></span>
-            MkDocs Installation
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-    
-  
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    MkDocs portable Installation
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
-        
-  
-  <span class="md-ellipsis">
-    MkDocs portable Installation
-  </span>
-  
-
-      </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#1-python-enviroment-for-mkdocs" class="md-nav__link">
-    <span class="md-ellipsis">
-      1) Python enviroment for MkDocs
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2-install-mkdocs" class="md-nav__link">
-    <span class="md-ellipsis">
-      2) Install MkDocs
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3-install-a-theme" class="md-nav__link">
-    <span class="md-ellipsis">
-      3) Install a Theme
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#4-install-plugins" class="md-nav__link">
-    <span class="md-ellipsis">
-      4) Install plugins
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="4) Install plugins">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#roamlinks-plugin" class="md-nav__link">
-    <span class="md-ellipsis">
-      Roamlinks plugin
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#awesom-pages-plugin" class="md-nav__link">
-    <span class="md-ellipsis">
-      Awesom pages plugin
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">2D Objects</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../Function%20description/2D%20Objects/2D%20Rectangle/">2D Rectangle</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Setup of the working enviroment</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../../Foreword%20working%20environment/">Testtitle</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">MkDocs Installation</a>
+    <ul class="current">
+                <li class="toctree-l2 current"><a class="reference internal current" href="./">MkDocs portable Installation</a>
+    <ul class="current">
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Visual Studio Code Setup</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../Visual%20Studio%20Code%20Setup/OCP%20Viewer%20adjustments/">OCP Viewer adjustments</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Visual%20Studio%20Code%20Setup/OCP%20Viewer%20setup/">OCP Viewer setup</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Visual%20Studio%20Code%20Setup/Visual%20Studio%20Code%20Windows%20Portable%20Setup%20for%20build123d/">Visual Studio Code Windows Portable Setup for build123d</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Visual%20Studio%20Code%20Setup/Visual%20Studio%20Code%20extensions%20or%20adjustments/">Visual Studio Code extensions or adjustments</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
     </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#5-configuring-mkdocs-and-creating-a-static-website" class="md-nav__link">
-    <span class="md-ellipsis">
-      5) Configuring MkDocs and creating a static website
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#7-getting-your-obsidian-markdown-files-to-mkdocs" class="md-nav__link">
-    <span class="md-ellipsis">
-      7) Getting your Obsidian markdown files to MkDocs
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#8-creating-your-static-website-to-deploy-to-github" class="md-nav__link">
-    <span class="md-ellipsis">
-      8) Creating your static Website to deploy to github
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
-    </li>
-  
 
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-    
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../..">Build123d Noob help</a>
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
-        
-          
-          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    Visual Studio Code Setup
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_3">
-            <span class="md-nav__icon md-icon"></span>
-            Visual Studio Code Setup
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Visual%20Studio%20Code%20Setup/OCP%20Viewer%20setup/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    OCP Viewer setup
-  </span>
-  
-
-      </a>
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Setup of the working enviroment</li>
+          <li class="breadcrumb-item">MkDocs Installation</li>
+      <li class="breadcrumb-item active">MkDocs portable Installation</li>
+    <li class="wy-breadcrumbs-aside">
     </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Visual%20Studio%20Code%20Setup/Visual%20Studio%20Code%20Windows%20Portable%20Setup%20for%20build123d/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Visual Studio Code Windows Portable Setup for build123d
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Visual%20Studio%20Code%20Setup/Visual%20Studio%20Code%20extensions%20or%20adjustments/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Visual Studio Code extensions or adjustments
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
   </ul>
-</nav>
-                  </div>
-                </div>
-              </div>
-            
-            
-          
-          
-            <div class="md-content" data-md-component="content">
-              <article class="md-content__inner md-typeset">
-                
-                  
-
-
-  <h1>MkDocs portable Installation</h1>
-
-<p>(not necessary for build123d)</p>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <p>(not necessary for build123d)</p>
 <p>MkDocs is a python solution to build static websites from markdown files. I am using Obsidian MD for my notetaking. So my intention was to just document once in Obsidian MD and to create my static documentation website from one source in one workflow. Once I reviewed the static website and once I am satisfied with the website I can go on and publish it to github. </p>
-<h2 id="1-python-enviroment-for-mkdocs">1) Python enviroment for MkDocs</h2>
+<h3 id="1-python-enviroment-for-mkdocs">1) Python enviroment for MkDocs</h3>
 <p>Download WinPython 3.11.8 from Sourceforge: <a href="https://sourceforge.net/projects/winpython/files/WinPython_3.11/3.11.8.0/Winpython64-3.11.8.0.exe/download">WinPython - 3.11.8</a></p>
 <p>You find all WinPython Versions under this link: <a href="https://sourceforge.net/projects/winpython/files/">WinPython</a></p>
 <p>WinPython is a portable setup of the Python runtime enviroment for windows.
@@ -868,25 +126,25 @@ For example: D:\Portable_MkDocs</p>
 <p>This will open the windows Powershell. You can check your Python version by typing: <strong><em>python --version</em></strong>. 
 Also check if your paket manager pip is installed by typing:  <strong><em>pip --version</em></strong></p>
 <p><img alt="" src="../../../screenshots/68e1eb07d0bb36e244b12700c18502bb.png" /></p>
-<h2 id="2-install-mkdocs">2) Install MkDocs</h2>
+<h3 id="2-install-mkdocs">2) Install MkDocs</h3>
 <p>Website MkDocs: <a href="https://www.mkdocs.org/">MkDocs</a></p>
 <p>To install MkDocs you need to install it with a paket manager into your python environment. To do so we will use pip which is the pre installed paket manager in WinPython.</p>
 <p>Type: <strong><em>pip install mkdocs</em></strong></p>
-<h2 id="3-install-a-theme">3) Install a Theme</h2>
+<h3 id="3-install-a-theme">3) Install a Theme</h3>
 <p>For my documentation the material theme seemed most usefull. Material is a theme which is widely used and also supported by many plugins.</p>
 <p>You find informations for the material theme here: <a href="https://squidfunk.github.io/mkdocs-material/">Material theme</a></p>
 <p>To install type: <strong><em>pip install mkdocs-material</em></strong></p>
-<h2 id="4-install-plugins">4) Install plugins</h2>
+<h3 id="4-install-plugins">4) Install plugins</h3>
 <p>I installed several plugins which extend and enhance MkDocs</p>
-<h3 id="roamlinks-plugin">Roamlinks plugin</h3>
+<h4 id="roamlinks-plugin">Roamlinks plugin</h4>
 <p>This plugin allows to keep the links you defined in your markdown and change them to working links in your static site.</p>
 <p>You find the plugin here: <a href="https://github.com/Jackiexiao/mkdocs-roamlinks-plugin">mkdocs-roamlinks-plugin</a></p>
 <p>Install the plugin by typing: <strong><em>pip install mkdocs-roamlinks-plugin</em></strong></p>
-<h3 id="awesom-pages-plugin">Awesom pages plugin</h3>
+<h4 id="awesom-pages-plugin">Awesom pages plugin</h4>
 <p>This plugin allows to configure your page navigation, your page naming and your page configuration in more detail.</p>
 <p>You find the plugin here: <a href="https://github.com/lukasgeiter/mkdocs-awesome-pages-plugin">awesome-pages-plugin</a></p>
 <p>Install the plugin by typing: <strong><em>pip install mkdocs-awesome-pages-plugin</em></strong></p>
-<h2 id="5-configuring-mkdocs-and-creating-a-static-website">5) Configuring MkDocs and creating a static website</h2>
+<h3 id="5-configuring-mkdocs-and-creating-a-static-website">5) Configuring MkDocs and creating a static website</h3>
 <p>To create your first project go into the directory where you installed your Python enviroment (D:\Portable_MkDocs\WPy64-31180) and start "WinPython Powershell Prompt.exe".</p>
 <p>In the windows powershell type: 
 <strong><em>mkdocs new Testproject</em></strong></p>
@@ -979,7 +237,7 @@ This let's you change into the Testproject directory.</p>
 This starts a local webserver and generates your website from the markdown files found in "D:\Portable_MkDocs\scripts\Testproject".  </p>
 <p>You can see the newly generated website by opening a browser and typing <strong><em>localhost:8000</em></strong></p>
 <p>See more details also on the MkDocs website: <a href="https://www.mkdocs.org/getting-started/">Getting Started - MkDocs</a></p>
-<h2 id="7-getting-your-obsidian-markdown-files-to-mkdocs">7) Getting your Obsidian markdown files to MkDocs</h2>
+<h3 id="7-getting-your-obsidian-markdown-files-to-mkdocs">7) Getting your Obsidian markdown files to MkDocs</h3>
 <p>Currently I use an Obsidian community plugin: "markdown-export"</p>
 <p>Github: <a href="https://github.com/bingryan/obsidian-markdown-export-plugin">markdown-export</a></p>
 <p>The file structure of the local export directory needs to be:</p>
@@ -990,7 +248,7 @@ This starts a local webserver and generates your website from the markdown files
   |      |-- subfolders  --&gt; keeping additional markdown files
 </code></pre></div>
 <p>As I needed some adjustment in the export files so that screenshots are correctly included into my static html I had to extend the plugin with a regex/replace ability. Currently that is pending pull request and I am not acquainted enough yet with github and the whole toolchain to publish it on my own. It took me allready some time to figure out how to setup TypeScript for Obsidian MD and how to improve the plugin.</p>
-<h2 id="8-creating-your-static-website-to-deploy-to-github">8) Creating your static Website to deploy to github</h2>
+<h3 id="8-creating-your-static-website-to-deploy-to-github">8) Creating your static Website to deploy to github</h3>
 <p>I take my notes in a documentation folder in Obsidian MD. I adjusted the markdown-export plugin to have an output directory into the MkDocs Testproject/docs folder and export into that folder. 
 Then I start Mkdocs and build the static site typing: <strong><em>mkdocs serve</em></strong></p>
 <p>After controlling the build static website I upload it to github by typing <strong><em>mkdocs gh-deploy</em></strong></p>
@@ -998,65 +256,51 @@ Then I start Mkdocs and build the static site typing: <strong><em>mkdocs serve</
 - Improve markdown export with a profile setting<br />
 - maybe use another plugin <em>Github Publisher</em> (but I did not figure out yet if you can export localy)<br />
 - Setup a workflow on Github to build everything there from markdown files  </p>
-
-
-
-
-
-
-
-
-
-
-
-
-                
-              </article>
+              
             </div>
-          
-          
-<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
-        </div>
-        
-          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
-  Back to top
-</button>
-        
-      </main>
-      
-        <footer class="md-footer">
-  
-  <div class="md-footer-meta md-typeset">
-    <div class="md-footer-meta__inner md-grid">
-      <div class="md-copyright">
-  
-  
-    Made with
-    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
-      Material for MkDocs
-    </a>
-  
-</div>
-      
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../../Foreword%20working%20environment/" class="btn btn-neutral float-left" title="Testtitle"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../../Visual%20Studio%20Code%20Setup/OCP%20Viewer%20adjustments/" class="btn btn-neutral float-right" title="OCP Viewer adjustments">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
   </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
 </footer>
-      
-    </div>
-    <div class="md-dialog" data-md-component="dialog">
-      <div class="md-dialog__inner md-typeset"></div>
-    </div>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["search.share", "content.code.copy", "content.code.select", "content.code.annotate", "navigation.path", "toc.integrate", "navigation.top", "navigation.tabs", "navigation.tabs.sticky"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+      <span><a href="../../Foreword%20working%20environment/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
-      <script src="../../../assets/javascripts/bundle.c8d2eff1.min.js"></script>
-      
-        <script src="../../../assets/external/unpkg.com/mermaid@10.7.0/dist/mermaid.min.js"></script>
-      
+      <span><a href="../../Visual%20Studio%20Code%20Setup/OCP%20Viewer%20adjustments/" style="color: #fcfcfc">Next &raquo;</a></span>
     
-  </body>
+  </span>
+</div>
+    <script src="../../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../../..";</script>
+    <script src="../../../js/theme_extra.js"></script>
+    <script src="../../../js/theme.js"></script>
+      <script src="../../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
 </html>
