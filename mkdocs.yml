@@ -1,9 +1,9 @@
-site_name: Build123d for noobs
-site_url: https://github.com/CePeU/build123d-for-noobs
+site_name: Build123d Noob help
+#site_url: https://github.com/CePeU/build123-for-noobs
 
 theme:
     name: material
-    #repo_url: https://github.com/CePeU/build123d
+    #repo_url: https://github.com/CePeU/build123-for-noobs.git
     features:
         #- search.highlight # Highlight all occurences of search after selecting link
         - search.share # allows for a share button after searching
@@ -33,9 +33,9 @@ markdown_extensions:
     #- pymdownx.snippets
     - pymdownx.superfences # adds linenumbers!
 
-plugins: 
+plugins:
+  - roamlinks # Plugin for translating markdown links to local and external links
   - search: # Enables search. If plugins are used search must be explicitly enabled
         lang: en # the site language will be english so searching in english makes sense
-  - roamlinks # Plugin for translating markdown links to local and external links
-  - privacy # Loads all external assets before build
+  - #privacy # Loads all external assets before build
   
