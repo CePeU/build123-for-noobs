@@ -1,16 +1,19 @@
-site_name: Build123d Noob help
-#site_url: https://github.com/CePeU/build123-for-noobs
+site_name: Build123d for noobs
+site_url:  https://cepeu.github.io/build123-for-noobs/
+use_directory_urls: true
 
 theme:
     name: material
-    #repo_url: https://github.com/CePeU/build123-for-noobs.git
+    highlightjs: true
+    sticky_navigation: true
+    #repo_url: https://github.com/CePeU/build123d
     features:
-        #- search.highlight # Highlight all occurences of search after selecting link
+        - search.highlight # Highlight all occurences of search after selecting link
         - search.share # allows for a share button after searching
         #- header.autohide # hides the header uppon scrolling use for more screen size?
         - content.code.copy # Renders a copy button in the code block
-        - content.code.select
-        - content.code.annotate
+        #- content.code.select
+        #- content.code.annotate
         - navigation.path
         - toc.integrate # Integrates the left side table of content into the navigation to the right
         #- toc.follow # Not sure yet what it does
@@ -24,18 +27,21 @@ theme:
 markdown_extensions:
     - toc:
         toc_depth: 4 # increase toc depth to 4
-    #    permalink: true # Can add a anchor link
+        permalink: true # Can add a anchor link
     - pymdownx.highlight:
     #    anchor_linenums: true
     #    line_spans: __span
     #    pygments_lang_class: true
-    #- pymdownx.inlinehilite # python code block highlighting? Also adds linenumbering!
+    #- pymdownx.inlinehilite # python code block highlighting?
     #- pymdownx.snippets
+    - nl2br
+    - admonition
+    - pymdownx.details
     - pymdownx.superfences # adds linenumbers!
 
-plugins:
-  - roamlinks # Plugin for translating markdown links to local and external links
+plugins: 
   - search: # Enables search. If plugins are used search must be explicitly enabled
         lang: en # the site language will be english so searching in english makes sense
-  - #privacy # Loads all external assets before build
-  
+  #- privacy # Loads all external assets before build
+  - roamlinks # Plugin for translating markdown links to local and external links
+  - callouts

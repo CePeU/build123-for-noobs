@@ -1,0 +1,12 @@
+{
+  "output": "D:\\Portable_MkDocs\\scripts\\Build123dForNoobs\\docs",
+  "attachment": "attachment",
+  "GFM": true,
+  "fileNameEncode": true,
+  "RegExString": [
+    "!\\[\\]\\(..\\/"
+  ],
+  "ReplacmentString": [
+    "![](../../../"
+  ]
+}
