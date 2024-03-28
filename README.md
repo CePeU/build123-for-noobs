@@ -18,4 +18,6 @@ Head over to read all the other documentation (there is a lot!) [https://build1
 
 Do not misunderstand me. The coders and the build123d team does a fantastic job and are super helpfull but their mindset ist not allways mine :)
 
+You can find my documentation here: [https://cepeu.github.io/build123-for-noobs/](https://cepeu.github.io/build123-for-noobs/)
+
 I also hereby grant the permission for the build123d project to use any explanation and code found here to improve their own documentation.
