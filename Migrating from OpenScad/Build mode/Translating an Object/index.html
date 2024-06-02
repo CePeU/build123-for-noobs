@@ -14,7 +14,7 @@
         <link rel="prev" href="../Rotating%20an%20Object/">
       
       
-        <link rel="next" href="../../../Primitives/1D%20Objects/1D%20Line/">
+        <link rel="next" href="../Union%20and%20difference/">
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
@@ -192,7 +192,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="../Mirroring%20an%20object/" class="md-tabs__link">
+        <a href="../Creating%20a%20primitive/" class="md-tabs__link">
           
   
   Migrating from OpenScad
@@ -402,6 +402,27 @@
   
   
     <li class="md-nav__item">
+      <a href="../Creating%20a%20primitive/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Creating a primitive
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../Mirroring%20an%20object/" class="md-nav__link">
         
   
@@ -461,6 +482,27 @@
 
       </a>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Union%20and%20difference/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Union and difference
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -919,11 +961,74 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../Setup%20of%20the%20working%20enviroment/Visual%20Studio%20Code%20Setup/Using%20Fossil%20%28work%20in%20progress%29/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Using Fossil (work in progress)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Setup%20of%20the%20working%20enviroment/Visual%20Studio%20Code%20Setup/Using%20Git%20%28work%20in%20progress%29/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Using Git (work in progress)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../Setup%20of%20the%20working%20enviroment/Visual%20Studio%20Code%20Setup/Visual%20Studio%20Code%20Windows%20Portable%20Setup%20for%20build123d/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
     Visual Studio Code Windows Portable Setup for build123d
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Setup%20of%20the%20working%20enviroment/Visual%20Studio%20Code%20Setup/Visual%20Studio%20Code%20extensions%20and%20adjustments/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Visual Studio Code extensions and adjustments
   </span>
   
 
@@ -986,7 +1091,56 @@
 
   <h1>Translating an Object</h1>
 
+<p>Most of the times you will translate your Object in the builder by using location objects in a locations list. (See also: <a href="../Rotating%20an%20Object/">Rotating an Object</a>)</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kn">from</span> <span class="nn">build123d</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">ocp_vscode</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="n">set_defaults</span><span class="p">(</span><span class="n">reset_camera</span><span class="o">=</span><span class="n">Camera</span><span class="o">.</span><span class="n">KEEP</span><span class="p">,</span> <span class="n">black_edges</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span><span class="n">center_grid</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 
+<span class="k">with</span> <span class="n">BuildPart</span><span class="p">()</span> <span class="k">as</span> <span class="n">TestPart</span><span class="p">:</span>
+    <span class="c1"># Creates TWO locations in the Locations LIST</span>
+    <span class="k">with</span> <span class="n">Locations</span><span class="p">(</span><span class="n">Location</span><span class="p">((</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">)),</span><span class="n">Location</span><span class="p">((</span><span class="mi">10</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">0</span><span class="p">))):</span>
+        <span class="c1"># Creates a cube at EACH Location in the Location LIST </span>
+        <span class="n">Box</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
+
+<span class="n">show_all</span><span class="p">()</span>
+</code></pre></div></td></tr></table></div>
+<p>This can be written in short:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kn">from</span> <span class="nn">build123d</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">ocp_vscode</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="n">set_defaults</span><span class="p">(</span><span class="n">reset_camera</span><span class="o">=</span><span class="n">Camera</span><span class="o">.</span><span class="n">KEEP</span><span class="p">,</span> <span class="n">black_edges</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span><span class="n">center_grid</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="k">with</span> <span class="n">BuildPart</span><span class="p">()</span> <span class="k">as</span> <span class="n">TestPart</span><span class="p">:</span>
+    <span class="c1"># Creates TWO locations in the Locations LIST</span>
+    <span class="k">with</span> <span class="n">Locations</span><span class="p">((</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">),(</span><span class="mi">10</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">0</span><span class="p">)):</span>
+        <span class="c1"># Creates a cube at EACH Location in the Location LIST </span>
+        <span class="n">Box</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
+
+<span class="n">show_all</span><span class="p">()</span>
+</code></pre></div></td></tr></table></div>
+<p>Other ways to change postion is:</p>
+<p>Pos(): Description needed<br />
+move: Description needed<br />
+offset: Description needed</p>
 
 
 

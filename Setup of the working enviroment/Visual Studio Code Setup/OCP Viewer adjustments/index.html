@@ -14,7 +14,7 @@
         <link rel="prev" href="../../MkDocs%20Installation/MkDocs%20portable%20Installation/">
       
       
-        <link rel="next" href="../Visual%20Studio%20Code%20Windows%20Portable%20Setup%20for%20build123d/">
+        <link rel="next" href="../Using%20Fossil%20%28work%20in%20progress%29/">
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
@@ -62,6 +62,11 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
+      
+        
+        <a href="#general-ocp-viewer-setup" class="md-skip">
+          Skip to content
+        </a>
       
     </div>
     <div data-md-component="announce">
@@ -188,7 +193,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../Migrating%20from%20OpenScad/Build%20mode/Mirroring%20an%20object/" class="md-tabs__link">
+        <a href="../../../Migrating%20from%20OpenScad/Build%20mode/Creating%20a%20primitive/" class="md-tabs__link">
           
   
   Migrating from OpenScad
@@ -393,6 +398,27 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../Migrating%20from%20OpenScad/Build%20mode/Creating%20a%20primitive/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Creating a primitive
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../Migrating%20from%20OpenScad/Build%20mode/Mirroring%20an%20object/" class="md-nav__link">
         
   
@@ -440,6 +466,27 @@
   
   <span class="md-ellipsis">
     Translating an Object
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Migrating%20from%20OpenScad/Build%20mode/Union%20and%20difference/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Union and difference
   </span>
   
 
@@ -895,6 +942,17 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    OCP Viewer adjustments
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -905,6 +963,92 @@
 
       </a>
       
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#general-ocp-viewer-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      General OCP Viewer Setup
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ocp-color-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      OCP Color Setup
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#colormap-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      Colormap Setup
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Using%20Fossil%20%28work%20in%20progress%29/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Using Fossil (work in progress)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Using%20Git%20%28work%20in%20progress%29/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Using Git (work in progress)
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -922,6 +1066,27 @@
   
   <span class="md-ellipsis">
     Visual Studio Code Windows Portable Setup for build123d
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Visual%20Studio%20Code%20extensions%20and%20adjustments/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Visual Studio Code extensions and adjustments
   </span>
   
 
@@ -984,6 +1149,7 @@
 
   <h1>OCP Viewer adjustments</h1>
 
+<h2 id="general-ocp-viewer-setup">General OCP Viewer Setup<a class="headerlink" href="#general-ocp-viewer-setup" title="Permanent link">&para;</a></h2>
 <p>You can influence how the OCP Viewer works. There are some settings which I find very helpfull.</p>
 <p>This is the setup I use as a template for starting a build123d project.</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
@@ -1014,6 +1180,26 @@ This will color each new object in the color mentionen (so first is red, second 
 Write your code here</p>
 <p>Line 6:<br />
 Shows all objects and colors them.</p>
+<h2 id="ocp-color-setup">OCP Color Setup<a class="headerlink" href="#ocp-color-setup" title="Permanent link">&para;</a></h2>
+<p>You can also define your own colors. You need to define them as RGB colors for example like this:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kn">from</span> <span class="nn">build123d</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">ocp_vscode</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="n">set_defaults</span><span class="p">(</span><span class="n">reset_camera</span><span class="o">=</span><span class="n">Camera</span><span class="o">.</span><span class="n">KEEP</span><span class="p">,</span> <span class="n">ortho</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">black_edges</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span><span class="n">measure_tools</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">colors</span> <span class="o">=</span> <span class="p">[(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">255</span><span class="p">),(</span><span class="mi">0</span><span class="p">,</span><span class="mi">255</span><span class="p">,</span><span class="mi">0</span><span class="p">),(</span><span class="mi">255</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">)]</span>
+
+<span class="n">show_all</span><span class="p">(</span><span class="n">colors</span><span class="o">=</span><span class="n">colors</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+<p>You can also use hex values like 0xFf8833</p>
+<h2 id="colormap-setup">Colormap Setup<a class="headerlink" href="#colormap-setup" title="Permanent link">&para;</a></h2>
+<p><a href="https://matplotlib.org/stable/users/explain/colors/colormaps.html">Choosing Colormaps in Matplotlib — Matplotlib 3.8.4 documentation</a></p>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">colormaps</span>
+<span class="nb">list</span><span class="p">(</span><span class="n">colormaps</span><span class="p">)</span>
+</code></pre></div>
 
 
 

@@ -8,19 +8,25 @@
       
       
       
+        <link rel="canonical" href="https://cepeu.github.io/build123-for-noobs/Migrating%20from%20OpenScad/Build%20mode/Union%20and%20difference/">
       
       
+        <link rel="prev" href="../Translating%20an%20Object/">
       
-      <link rel="icon" href="/build123-for-noobs/assets/images/favicon.png">
+      
+        <link rel="next" href="../../../Primitives/1D%20Objects/1D%20Line/">
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.12">
     
     
       
-        <title>Build123d for noobs</title>
+        <title>Union and difference - Build123d for noobs</title>
       
     
     
-      <link rel="stylesheet" href="/build123-for-noobs/assets/stylesheets/main.7e359304.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.7e359304.min.css">
       
       
 
@@ -39,7 +45,7 @@
       
     
     
-    <script>__md_scope=new URL("/build123-for-noobs/",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -69,7 +75,7 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="/build123-for-noobs/." title="Build123d for noobs" class="md-header__button md-logo" aria-label="Build123d for noobs" data-md-component="logo">
+    <a href="../../.." title="Build123d for noobs" class="md-header__button md-logo" aria-label="Build123d for noobs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -89,7 +95,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              Union and difference
             
           </span>
         </div>
@@ -157,7 +163,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="/build123-for-noobs/." class="md-tabs__link">
+      <a href="../../.." class="md-tabs__link">
         
   
     
@@ -172,17 +178,21 @@
         
   
   
+    
+  
   
     
     
       
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="/build123-for-noobs/Migrating%20from%20OpenScad/Build%20mode/Creating%20a%20primitive/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../Creating%20a%20primitive/" class="md-tabs__link">
           
   
   Migrating from OpenScad
@@ -209,7 +219,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/build123-for-noobs/Primitives/1D%20Objects/1D%20Line/" class="md-tabs__link">
+        <a href="../../../Primitives/1D%20Objects/1D%20Line/" class="md-tabs__link">
           
   
   Primitives
@@ -230,7 +240,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/build123-for-noobs/Setup%20of%20the%20working%20enviroment/Foreword%20working%20environment/" class="md-tabs__link">
+        <a href="../../../Setup%20of%20the%20working%20enviroment/Foreword%20working%20environment/" class="md-tabs__link">
           
   
   Setup of the working enviroment
@@ -271,7 +281,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/build123-for-noobs/." title="Build123d for noobs" class="md-nav__button md-logo" aria-label="Build123d for noobs" data-md-component="logo">
+    <a href="../../.." title="Build123d for noobs" class="md-nav__button md-logo" aria-label="Build123d for noobs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -289,7 +299,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/build123-for-noobs/." class="md-nav__link">
+      <a href="../../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -306,23 +316,28 @@
       
   
   
+    
   
   
+  
     
     
     
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -333,7 +348,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Migrating from OpenScad
@@ -344,6 +359,8 @@
                 
   
   
+    
+  
   
   
     
@@ -353,11 +370,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" checked>
         
           
           <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
@@ -371,7 +388,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_1">
             <span class="md-nav__icon md-icon"></span>
             Build mode
@@ -385,7 +402,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/build123-for-noobs/Migrating%20from%20OpenScad/Build%20mode/Creating%20a%20primitive/" class="md-nav__link">
+      <a href="../Creating%20a%20primitive/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -406,7 +423,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/build123-for-noobs/Migrating%20from%20OpenScad/Build%20mode/Mirroring%20an%20object/" class="md-nav__link">
+      <a href="../Mirroring%20an%20object/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -427,7 +444,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/build123-for-noobs/Migrating%20from%20OpenScad/Build%20mode/Rotating%20an%20Object/" class="md-nav__link">
+      <a href="../Rotating%20an%20Object/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -448,7 +465,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/build123-for-noobs/Migrating%20from%20OpenScad/Build%20mode/Translating%20an%20Object/" class="md-nav__link">
+      <a href="../Translating%20an%20Object/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -466,10 +483,17 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="/build123-for-noobs/Migrating%20from%20OpenScad/Build%20mode/Union%20and%20difference/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -478,6 +502,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -581,7 +606,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/build123-for-noobs/Primitives/1D%20Objects/1D%20Line/" class="md-nav__link">
+      <a href="../../../Primitives/1D%20Objects/1D%20Line/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -648,7 +673,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/build123-for-noobs/Primitives/2D%20Objects/2D%20Rectangle/" class="md-nav__link">
+      <a href="../../../Primitives/2D%20Objects/2D%20Rectangle/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -715,7 +740,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/build123-for-noobs/Primitives/3D%20Objects/3D%20Cube/" class="md-nav__link">
+      <a href="../../../Primitives/3D%20Objects/3D%20Cube/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -789,7 +814,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/build123-for-noobs/Setup%20of%20the%20working%20enviroment/Foreword%20working%20environment/" class="md-nav__link">
+      <a href="../../../Setup%20of%20the%20working%20enviroment/Foreword%20working%20environment/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -848,7 +873,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/build123-for-noobs/Setup%20of%20the%20working%20enviroment/MkDocs%20Installation/MkDocs%20portable%20Installation/" class="md-nav__link">
+      <a href="../../../Setup%20of%20the%20working%20enviroment/MkDocs%20Installation/MkDocs%20portable%20Installation/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -915,7 +940,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/build123-for-noobs/Setup%20of%20the%20working%20enviroment/Visual%20Studio%20Code%20Setup/OCP%20Viewer%20adjustments/" class="md-nav__link">
+      <a href="../../../Setup%20of%20the%20working%20enviroment/Visual%20Studio%20Code%20Setup/OCP%20Viewer%20adjustments/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -936,7 +961,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/build123-for-noobs/Setup%20of%20the%20working%20enviroment/Visual%20Studio%20Code%20Setup/Using%20Fossil%20%28work%20in%20progress%29/" class="md-nav__link">
+      <a href="../../../Setup%20of%20the%20working%20enviroment/Visual%20Studio%20Code%20Setup/Using%20Fossil%20%28work%20in%20progress%29/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -957,7 +982,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/build123-for-noobs/Setup%20of%20the%20working%20enviroment/Visual%20Studio%20Code%20Setup/Using%20Git%20%28work%20in%20progress%29/" class="md-nav__link">
+      <a href="../../../Setup%20of%20the%20working%20enviroment/Visual%20Studio%20Code%20Setup/Using%20Git%20%28work%20in%20progress%29/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -978,7 +1003,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/build123-for-noobs/Setup%20of%20the%20working%20enviroment/Visual%20Studio%20Code%20Setup/Visual%20Studio%20Code%20Windows%20Portable%20Setup%20for%20build123d/" class="md-nav__link">
+      <a href="../../../Setup%20of%20the%20working%20enviroment/Visual%20Studio%20Code%20Setup/Visual%20Studio%20Code%20Windows%20Portable%20Setup%20for%20build123d/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -999,7 +1024,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/build123-for-noobs/Setup%20of%20the%20working%20enviroment/Visual%20Studio%20Code%20Setup/Visual%20Studio%20Code%20extensions%20and%20adjustments/" class="md-nav__link">
+      <a href="../../../Setup%20of%20the%20working%20enviroment/Visual%20Studio%20Code%20Setup/Visual%20Studio%20Code%20extensions%20and%20adjustments/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1020,7 +1045,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/build123-for-noobs/Setup%20of%20the%20working%20enviroment/Visual%20Studio%20Code%20Setup/Visual%20Studio%20Code%20extensions%20or%20adjustments/" class="md-nav__link">
+      <a href="../../../Setup%20of%20the%20working%20enviroment/Visual%20Studio%20Code%20Setup/Visual%20Studio%20Code%20extensions%20or%20adjustments/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1061,8 +1086,99 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-  <h1>404 - Not found</h1>
+                  
 
+
+  <h1>Union and difference</h1>
+
+<p>The Builder in itself is adding each element to the other (or subtracting it) according to the parameter choosen for the object created.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kn">from</span> <span class="nn">build123d</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">ocp_vscode</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="n">set_defaults</span><span class="p">(</span><span class="n">reset_camera</span><span class="o">=</span><span class="n">Camera</span><span class="o">.</span><span class="n">KEEP</span><span class="p">,</span> <span class="n">black_edges</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span><span class="n">center_grid</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="k">with</span> <span class="n">BuildPart</span><span class="p">()</span> <span class="k">as</span> <span class="n">TestPart</span><span class="p">:</span>
+    <span class="c1"># Creates a Box</span>
+        <span class="n">Box</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
+    <span class="c1"># Subtracts a cylinder</span>
+        <span class="n">Cylinder</span><span class="p">(</span><span class="n">radius</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span><span class="n">height</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span><span class="n">mode</span><span class="o">=</span><span class="n">Mode</span><span class="o">.</span><span class="n">SUBTRACT</span><span class="p">)</span>
+    <span class="c1"># Subtract a Torus</span>
+        <span class="n">Torus</span><span class="p">(</span><span class="n">major_radius</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span><span class="n">minor_radius</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+
+<span class="n">show_all</span><span class="p">()</span>
+</code></pre></div></td></tr></table></div>
+<p>The mode=Mode.ADD is the default that's why it is not needed to write it again.</p>
+<p>Now what if we constructed two parts and want them to add together?</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kn">from</span> <span class="nn">build123d</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">ocp_vscode</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="n">set_defaults</span><span class="p">(</span><span class="n">reset_camera</span><span class="o">=</span><span class="n">Camera</span><span class="o">.</span><span class="n">KEEP</span><span class="p">,</span> <span class="n">black_edges</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span><span class="n">center_grid</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="k">with</span> <span class="n">BuildPart</span><span class="p">()</span> <span class="k">as</span> <span class="n">TestPart</span><span class="p">:</span>
+    <span class="c1"># Creates a Box</span>
+        <span class="n">Box</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
+    <span class="c1"># Subtracts a cylinder</span>
+        <span class="n">Cylinder</span><span class="p">(</span><span class="n">radius</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span><span class="n">height</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span><span class="n">mode</span><span class="o">=</span><span class="n">Mode</span><span class="o">.</span><span class="n">SUBTRACT</span><span class="p">)</span>
+    <span class="c1"># Add a Torus</span>
+        <span class="n">Torus</span><span class="p">(</span><span class="n">major_radius</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span><span class="n">minor_radius</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+
+<span class="k">with</span> <span class="n">BuildPart</span><span class="p">()</span> <span class="k">as</span> <span class="n">TestPartII</span><span class="p">:</span>
+    <span class="c1"># Add a Torus</span>
+        <span class="n">Torus</span><span class="p">(</span><span class="n">major_radius</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span><span class="n">minor_radius</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+
+<span class="k">with</span> <span class="n">BuildPart</span><span class="p">()</span> <span class="k">as</span> <span class="n">AllTogether</span><span class="p">:</span>
+    <span class="c1"># Add Box</span>
+    <span class="n">add</span><span class="p">(</span><span class="n">TestPart</span><span class="p">)</span>
+    <span class="c1"># Add Torus</span>
+    <span class="n">add</span><span class="p">(</span><span class="n">TestPartII</span><span class="p">)</span>
+
+<span class="n">show_object</span><span class="p">(</span><span class="n">AllTogether</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
               </article>
             </div>
           
@@ -1102,10 +1218,10 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "/build123-for-noobs/", "features": ["search.highlight", "search.share", "content.code.copy", "navigation.path", "toc.integrate", "navigation.top", "navigation.tabs", "navigation.tabs.sticky"], "search": "/build123-for-noobs/assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["search.highlight", "search.share", "content.code.copy", "navigation.path", "toc.integrate", "navigation.top", "navigation.tabs", "navigation.tabs.sticky"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="/build123-for-noobs/assets/javascripts/bundle.c8d2eff1.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.c8d2eff1.min.js"></script>
       
     
   </body>

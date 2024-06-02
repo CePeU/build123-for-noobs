@@ -2,62 +2,87 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://cepeu.github.io/build123-for-noobs/</loc>
-         <lastmod>2024-03-25</lastmod>
+         <lastmod>2024-06-02</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://cepeu.github.io/build123-for-noobs/Migrating%20from%20OpenScad/Build%20mode/Creating%20a%20primitive/</loc>
+         <lastmod>2024-06-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://cepeu.github.io/build123-for-noobs/Migrating%20from%20OpenScad/Build%20mode/Mirroring%20an%20object/</loc>
-         <lastmod>2024-03-25</lastmod>
+         <lastmod>2024-06-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://cepeu.github.io/build123-for-noobs/Migrating%20from%20OpenScad/Build%20mode/Rotating%20an%20Object/</loc>
-         <lastmod>2024-03-25</lastmod>
+         <lastmod>2024-06-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://cepeu.github.io/build123-for-noobs/Migrating%20from%20OpenScad/Build%20mode/Translating%20an%20Object/</loc>
-         <lastmod>2024-03-25</lastmod>
+         <lastmod>2024-06-02</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://cepeu.github.io/build123-for-noobs/Migrating%20from%20OpenScad/Build%20mode/Union%20and%20difference/</loc>
+         <lastmod>2024-06-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://cepeu.github.io/build123-for-noobs/Primitives/1D%20Objects/1D%20Line/</loc>
-         <lastmod>2024-03-25</lastmod>
+         <lastmod>2024-06-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://cepeu.github.io/build123-for-noobs/Primitives/2D%20Objects/2D%20Rectangle/</loc>
-         <lastmod>2024-03-25</lastmod>
+         <lastmod>2024-06-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://cepeu.github.io/build123-for-noobs/Primitives/3D%20Objects/3D%20Cube/</loc>
-         <lastmod>2024-03-25</lastmod>
+         <lastmod>2024-06-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://cepeu.github.io/build123-for-noobs/Setup%20of%20the%20working%20enviroment/Foreword%20working%20environment/</loc>
-         <lastmod>2024-03-25</lastmod>
+         <lastmod>2024-06-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://cepeu.github.io/build123-for-noobs/Setup%20of%20the%20working%20enviroment/MkDocs%20Installation/MkDocs%20portable%20Installation/</loc>
-         <lastmod>2024-03-25</lastmod>
+         <lastmod>2024-06-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://cepeu.github.io/build123-for-noobs/Setup%20of%20the%20working%20enviroment/Visual%20Studio%20Code%20Setup/OCP%20Viewer%20adjustments/</loc>
-         <lastmod>2024-03-25</lastmod>
+         <lastmod>2024-06-02</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://cepeu.github.io/build123-for-noobs/Setup%20of%20the%20working%20enviroment/Visual%20Studio%20Code%20Setup/Using%20Fossil%20%28work%20in%20progress%29/</loc>
+         <lastmod>2024-06-02</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://cepeu.github.io/build123-for-noobs/Setup%20of%20the%20working%20enviroment/Visual%20Studio%20Code%20Setup/Using%20Git%20%28work%20in%20progress%29/</loc>
+         <lastmod>2024-06-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://cepeu.github.io/build123-for-noobs/Setup%20of%20the%20working%20enviroment/Visual%20Studio%20Code%20Setup/Visual%20Studio%20Code%20Windows%20Portable%20Setup%20for%20build123d/</loc>
-         <lastmod>2024-03-25</lastmod>
+         <lastmod>2024-06-02</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://cepeu.github.io/build123-for-noobs/Setup%20of%20the%20working%20enviroment/Visual%20Studio%20Code%20Setup/Visual%20Studio%20Code%20extensions%20and%20adjustments/</loc>
+         <lastmod>2024-06-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://cepeu.github.io/build123-for-noobs/Setup%20of%20the%20working%20enviroment/Visual%20Studio%20Code%20Setup/Visual%20Studio%20Code%20extensions%20or%20adjustments/</loc>
-         <lastmod>2024-03-25</lastmod>
+         <lastmod>2024-06-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
